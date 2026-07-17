@@ -15,11 +15,11 @@ export default function Home() {
 
       <Header />
 
-      <TopBanner />
-
-      <Hero />
-
-      <AboutSection />
+      <div style={{ zoom: "80%" }}>
+        <TopBanner />
+        <Hero />
+        <AboutSection />
+      </div>
 
       <Brand />
 
