@@ -30,7 +30,7 @@ export default function Purpose() {
 
   return (
     <section className="bg-[#D79247] py-16">
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-[1300px] mx-auto px-6">
         {/* Heading */}
         <h2
           className="text-center text-[30px] font-bold leading-[52px] text-white"
@@ -40,7 +40,7 @@ export default function Purpose() {
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
           {values.map((item) => (
             <div key={item.title} className="text-center">
               {/* Icon */}
@@ -55,14 +55,14 @@ export default function Purpose() {
 
               {/* Title */}
               <h3
-                className="text-[18px] font-bold leading-7 text-white"
+                className="text-[18px] font-bold leading-7 text-white whitespace-nowrap"
                 style={{ fontFamily: "Georgia" }}
               >
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-4 text-[16px] leading-6 text-white">
+              <p className="mt-4 text-[16px] leading-6 text-white max-w-[300px] mx-auto">
                 {item.description}
               </p>
             </div>
