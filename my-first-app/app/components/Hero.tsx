@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[960px] bg-cover bg-center overflow-hidden"
+      className="relative w-full h-[790px] bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: "url('/images/hero-background.jpg')" }}
     >
       {/* Black Overlays */}
