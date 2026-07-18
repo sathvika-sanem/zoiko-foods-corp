@@ -15,7 +15,7 @@ export default function Home() {
 
       <Header />
 
-      <div style={{ zoom: "80%" }}>
+      <div className="lg:[zoom:80%]">
         <TopBanner />
         <Hero />
         <AboutSection />

@@ -29,18 +29,18 @@ export default function Purpose() {
   ];
 
   return (
-    <section className="bg-[#D79247] py-16">
-      <div className="max-w-[1300px] mx-auto px-6">
+    <section className="bg-[#D79247] py-12 md:py-16">
+      <div className="max-w-[1300px] mx-auto px-4 sm:px-6">
         {/* Heading */}
         <h2
-          className="text-center text-[30px] font-bold leading-[52px] text-white"
+          className="text-center text-[24px] md:text-[30px] font-bold leading-[36px] md:leading-[52px] text-white"
           style={{ fontFamily: "Georgia" }}
         >
           Our Purpose &amp; Values
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-6 mt-10 md:mt-14">
           {values.map((item) => (
             <div key={item.title} className="text-center">
               {/* Icon */}
@@ -55,7 +55,7 @@ export default function Purpose() {
 
               {/* Title */}
               <h3
-                className="text-[18px] font-bold leading-7 text-white whitespace-nowrap"
+                className="text-[18px] font-bold leading-7 text-white lg:whitespace-nowrap"
                 style={{ fontFamily: "Georgia" }}
               >
                 {item.title}

@@ -80,32 +80,53 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-[#2D5A3D] text-white">
+    <footer className="bg-[#2D5A3D] text-white flex flex-col">
 
 
       {/* Top Links Section */}
-      <div className="max-w-[1160px] mx-auto grid grid-cols-4 gap-10 py-12">
+      <div className="order-1 max-w-[1160px] w-full mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-10 py-10 lg:py-12 px-6 lg:px-0">
 
         {columns.map((col,index)=>(
           <div key={index}>
 
-            <h3 className="text-[#D79247] text-base font-bold font-[Georgia] whitespace-nowrap border-b-2 border-[#D79247] pb-3 mb-6">
-              {col.title}
-            </h3>
+            {/* Mobile: collapsible */}
+            <details className="lg:hidden">
+              <summary className="text-[#D79247] text-base font-bold font-[Georgia] list-none cursor-pointer">
+                {col.title}
+              </summary>
+
+              <ul className="space-y-4 mt-4">
+                {col.links.map((link,i)=>(
+                  <li
+                  key={i}
+                  className="text-white text-base font-normal font-[Inter]"
+                  >
+                    {link}
+                  </li>
+                ))}
+              </ul>
+            </details>
+
+            {/* Desktop: always expanded */}
+            <div className="hidden lg:block">
+              <h3 className="text-[#D79247] text-base font-bold font-[Georgia] whitespace-nowrap border-b-2 border-[#D79247] pb-3 mb-6">
+                {col.title}
+              </h3>
 
 
-            <ul className="space-y-5">
+              <ul className="space-y-5">
 
-              {col.links.map((link,i)=>(
-                <li 
-                key={i}
-                className="text-white text-base font-normal font-[Inter]"
-                >
-                  {link}
-                </li>
-              ))}
+                {col.links.map((link,i)=>(
+                  <li
+                  key={i}
+                  className="text-white text-base font-normal font-[Inter]"
+                  >
+                    {link}
+                  </li>
+                ))}
 
-            </ul>
+              </ul>
+            </div>
 
           </div>
         ))}
@@ -116,27 +137,27 @@ export default function Footer() {
 
       {/* Newsletter Section */}
 
-      <div className="bg-[#2D5A3D] py-12">
+      <div className="order-2 bg-[#2D5A3D] py-6 lg:py-12">
 
-        <div className="max-w-[1160px] mx-auto flex justify-between">
+        <div className="max-w-[1160px] mx-auto flex flex-col lg:flex-row justify-between gap-10 px-6 lg:px-0">
 
 
           <div>
 
-            <h2 className="text-white text-xl font-bold font-[Georgia]">
+            <h2 className="text-white text-lg md:text-xl font-bold font-[Georgia]">
               Stay Inspired | Subscribe to the Zoiko Culinary Journal
             </h2>
 
 
-            <div className="flex mt-8">
+            <div className="flex flex-col items-start sm:flex-row sm:items-center gap-4 sm:gap-0 mt-6 lg:mt-8">
 
               <input
               type="email"
               placeholder="Enter your email address"
-              className="w-80 h-12 rounded-lg px-4 bg-white text-gray-700 placeholder-gray-400 border border-gray-300"
+              className="w-full sm:w-80 h-12 rounded-lg px-4 bg-white text-gray-700 placeholder-gray-400 border border-gray-300"
               />
 
-              <button className="ml-6 w-36 h-12 bg-[#D79247] rounded-lg text-white font-bold">
+              <button className="sm:ml-6 w-32 sm:w-36 h-11 sm:h-12 bg-[#D79247] rounded-lg text-white font-bold">
                 Subscribe
               </button>
 
@@ -153,14 +174,14 @@ export default function Footer() {
           </h2>
 
 
-          <div className="flex gap-5 mt-8">
+          <div className="flex gap-4 lg:gap-5 mt-6 lg:mt-8">
 
             {socials.map((social)=>(
               <a
               key={social.name}
               href="#"
               aria-label={social.name}
-              className="w-12 h-12 rounded-full bg-white flex items-center justify-center"
+              className="w-11 h-11 lg:w-12 lg:h-12 rounded-full bg-white flex items-center justify-center"
               >
                 <svg
                 className="w-5 h-5 fill-[#2D5A3D]"
@@ -187,31 +208,31 @@ export default function Footer() {
 
       {/* Company Info */}
 
-      <div className="bg-[#396A4B] py-10 text-center">
+      <div className="order-4 lg:order-3 bg-[#396A4B] py-8 lg:py-10 px-4 text-center">
 
 
-        <h2 className="text-white text-3xl font-bold font-[Georgia]">
+        <h2 className="text-white text-2xl md:text-3xl font-bold font-[Georgia]">
           Zoiko Foods Corp
         </h2>
 
 
-        <p className="text-[#D79247] mt-4">
+        <p className="text-[#D79247] mt-3 lg:mt-4 text-sm lg:text-base">
           Feeding the Future — One Culture. One Table.
         </p>
 
 
-        <p className="mt-6 font-bold text-sm">
+        <p className="mt-5 lg:mt-6 font-bold text-xs lg:text-sm">
           HACCP | BRCGS | FDA | FSSAI | ISO 22000 | ISO 9001 | Fair Trade | Rainforest Alliance | ESG
         </p>
 
 
-        <div className="flex justify-center gap-4 mt-10 flex-wrap">
+        <div className="flex justify-center gap-3 lg:gap-4 mt-8 lg:mt-10 flex-wrap">
 
 
           {locations.map((location,index)=>(
             <button
             key={index}
-            className={`px-5 py-3 rounded-lg 
+            className={`px-4 py-2 lg:px-5 lg:py-3 rounded-lg text-sm lg:text-base
             ${
               index===0
               ?"bg-[#D79247]"
@@ -235,10 +256,10 @@ export default function Footer() {
 
       {/* Description */}
 
-      <div className="bg-[#396A4B] py-8 text-center">
+      <div className="order-3 lg:order-4 bg-[#396A4B] py-8 px-6 text-center">
 
 
-        <p className="max-w-5xl mx-auto text-white text-lg font-[Georgia]">
+        <p className="max-w-5xl mx-auto text-white text-sm lg:text-lg italic lg:not-italic font-[Georgia]">
           Zoiko Foods Corp. — A proud member of Zoiko Group Inc., delivering
           world-class foods, beverages, and culinary innovation across continents.
           Rooted in heritage. Committed to sustainability. Driven by excellence.
@@ -258,7 +279,7 @@ export default function Footer() {
 
       {/* Bottom Policies */}
 
-      <div className="bg-[#396A4B] py-6 flex justify-center gap-10 flex-wrap text-sm underline">
+      <div className="order-5 bg-[#396A4B] py-6 px-6 grid grid-cols-2 gap-x-4 gap-y-3 text-left lg:flex lg:justify-center lg:gap-10 lg:flex-wrap text-xs lg:text-sm underline">
 
         <span>Privacy Policy (GDPR + CCPA)</span>
         <span>Terms & Conditions</span>
@@ -272,8 +293,8 @@ export default function Footer() {
 
       {/* Compliance Statement */}
 
-      <div className="bg-[#396A4B] py-6 text-center">
-        <p className="text-white text-sm italic font-[Georgia]">
+      <div className="order-6 bg-[#396A4B] py-6 px-6 text-center">
+        <p className="text-white text-xs lg:text-sm italic font-[Georgia]">
           Zoiko Foods Corp. operates with full compliance under global food safety and sustainability standards.
         </p>
       </div>

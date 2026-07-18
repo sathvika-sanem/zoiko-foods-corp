@@ -47,21 +47,21 @@ export default function Brand() {
 
   return (
     <section
-      className="py-20 bg-[#F8F8F8] bg-cover bg-center"
+      className="py-12 md:py-20 bg-[#F8F8F8] bg-cover bg-center"
       style={{
         backgroundImage: "url('/images/brand-bg.jpg')",
       }}
     >
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
 
         <h2
-          className="text-center text-[30px] font-bold leading-[52px] text-[#2D5A3D]"
+          className="text-center text-[24px] md:text-[30px] font-bold leading-[36px] md:leading-[52px] text-[#2D5A3D]"
           style={{ fontFamily: "Georgia" }}
         >
           Our Brand Family
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
           {brands.map((brand) => (
             <BrandCard
               key={brand.title}

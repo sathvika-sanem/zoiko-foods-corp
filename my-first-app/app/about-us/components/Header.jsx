@@ -27,7 +27,7 @@ export default function Header() {
           </Link>
 
           <Link
-            href="/about"
+            href="/about-us"
             className="text-[#2C2C2C] text-base font-normal leading-6 hover:text-[#1E4538] transition"
           >
             About Us
