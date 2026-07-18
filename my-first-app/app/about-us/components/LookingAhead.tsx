@@ -12,7 +12,7 @@ export default function LookingAhead() {
       />
 
       {/* Orange Overlay */}
-      <div className="absolute inset-50 bg-[#D48A2E]/55" />
+      <div className="absolute inset-0 bg-[#D48A2E]/55" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 text-center text-white">
         <h3
