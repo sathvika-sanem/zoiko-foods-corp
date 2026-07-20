@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Purpose() {
   return (
-    <section className="relative w-full py-24 overflow-hidden">
+    <section className="relative w-full py-14 md:py-24 overflow-hidden">
       {/* Background Image */}
       <Image
         src="/purpose-bg.jpg"
@@ -12,15 +12,15 @@ export default function Purpose() {
       />
 
       {/* Light Peach Overlay */}
-      <div className="absolute inset-0 bg-[#FEE1CC]/60 h-[734px]"></div>
+      <div className="absolute inset-0 bg-[#FEE1CC]/60 h-full lg:h-[734px]"></div>
 
-      <div className="relative max-w-[1200px] mx-auto flex gap-16 px-4 ">
+      <div className="relative max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 px-4 ">
 
         {/* Vision Card */}
-        <div className="w-[502px] shrink-0 bg-white rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.06)] p-12">
+        <div className="w-full lg:w-[502px] shrink-0 bg-white rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.06)] p-8 md:p-12">
 
           <h2
-            className="text-[#2D5A3D] text-[32px] font-bold mb-16"
+            className="text-[#2D5A3D] text-2xl md:text-[32px] font-bold mb-10 md:mb-16"
             style={{ fontFamily: "Georgia" }}
           >
             Our Purpose
@@ -47,7 +47,7 @@ export default function Purpose() {
         </div>
 
         {/* Mission Card */}
-        <div className="flex-1 bg-white rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.06)] p-12">
+        <div className="flex-1 bg-white rounded-lg shadow-[0px_4px_20px_rgba(0,0,0,0.06)] p-8 md:p-12">
 
           <h3
             className="text-[#2D5A3D] text-2xl font-bold mb-8"

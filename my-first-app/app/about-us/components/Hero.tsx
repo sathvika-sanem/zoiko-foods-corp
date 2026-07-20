@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[506px] overflow-hidden">
+    <section className="relative w-full h-[400px] md:h-[506px] overflow-hidden">
       {/* Background */}
       <Image
         src="/images/about-bg.png.png"
@@ -24,20 +24,18 @@ export default function Hero() {
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
         <h1
-          className="text-white text-5xl font-bold"
+          className="text-white text-3xl md:text-5xl font-bold leading-tight md:leading-[83.2px]"
           style={{
             fontFamily: "Georgia",
-            lineHeight: "83.2px",
           }}
         >
           Feeding the Future
         </h1>
 
         <p
-          className="mt-6 text-white/95 text-2xl font-light"
+          className="mt-4 md:mt-6 text-white/95 text-lg md:text-2xl font-light leading-7 md:leading-10"
           style={{
             fontFamily: "Inter",
-            lineHeight: "40px",
             textShadow: "0px 2px 8px rgba(0,0,0,0.3)",
           }}
         >
@@ -45,10 +43,9 @@ export default function Hero() {
         </p>
 
         <p
-          className="mt-4 text-white/90 text-base"
+          className="mt-4 text-white/90 text-sm md:text-base leading-6 md:leading-7"
           style={{
             fontFamily: "Inter",
-            lineHeight: "28px",
             textShadow: "0px 2px 8px rgba(0,0,0,0.3)",
           }}
         >

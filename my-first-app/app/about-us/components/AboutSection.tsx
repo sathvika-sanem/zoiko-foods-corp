@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function AboutSection() {
   return (
     <section className="w-full bg-[#1E4536]/10 py-10">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[1200px] mx-auto px-4 lg:px-0">
 
         {/* Heading */}
         <h2
-          className="text-center text-[#2D5A3D] text-3xl font-bold mb-10"
+          className="text-center text-[#2D5A3D] text-2xl md:text-3xl font-bold mb-8 md:mb-10"
           style={{ fontFamily: "Georgia" }}
         >
           About Zoiko Foods Corp
         </h2>
 
-        <div className="grid grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
 
           {/* Left Side */}
           <div>
@@ -66,7 +66,7 @@ export default function AboutSection() {
               <span className="text-[#666666]">
                 {" "}
                 spanning staples, condiments,
-                <br />
+                <br className="hidden md:block" />{" "}
                 beverages, handheld meals, coffee, tea, wellness, and wines.
               </span>
             </p>
@@ -151,7 +151,7 @@ export default function AboutSection() {
             >
               <i>Together, these brands ensure Zoiko Foods speaks to every palate —
               from
-              <br />
+              <br className="hidden md:block" />{" "}
               heritage-rich to globally versatile.</i>
             </p>
 

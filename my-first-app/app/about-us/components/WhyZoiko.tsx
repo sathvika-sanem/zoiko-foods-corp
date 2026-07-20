@@ -41,22 +41,22 @@ const cards = [
 
 export default function WhyZoiko() {
   return (
-    <section className="bg-[#F9FFF8] py-24">
-      <div className="max-w-[1200px] mx-auto">
+    <section className="bg-[#F9FFF8] py-14 md:py-24">
+      <div className="max-w-[1200px] mx-auto px-4 lg:px-0">
 
         <h2
-          className="text-center text-[#2D5A3D] text-3xl font-bold mb-16"
+          className="text-center text-[#2D5A3D] text-2xl md:text-3xl font-bold mb-10 md:mb-16"
           style={{ fontFamily: "Georgia" }}
         >
           Why Zoiko Foods?
         </h2>
 
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
           {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl border border-[#E7E7E7] shadow-[2px_4px_23.6px_rgba(0,0,0,0.04)] h-[320px] px-8 flex flex-col items-center justify-center text-center"
+              className="bg-white rounded-xl border border-[#E7E7E7] shadow-[2px_4px_23.6px_rgba(0,0,0,0.04)] min-h-[280px] lg:h-[320px] px-8 py-10 lg:py-0 flex flex-col items-center justify-center text-center"
             >
               <Image
                 src={card.image}

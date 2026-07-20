@@ -77,16 +77,16 @@ const items = [
 
 export default function WhereWeOperate() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-14 md:py-24">
       <div className="max-w-[1200px] mx-auto px-4">
         <h2
-          className="text-center text-3xl font-bold text-[#2D5A3D] mb-20"
+          className="text-center text-2xl md:text-3xl font-bold text-[#2D5A3D] mb-12 md:mb-20"
           style={{ fontFamily: "Georgia" }}
         >
           Where We Operate
         </h2>
 
-        <div className="grid grid-cols-3 gap-x-12 gap-y-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 md:gap-y-20">
           {items.map((item, index) => (
             <div key={index} className="text-center flex flex-col items-center">
               <Image

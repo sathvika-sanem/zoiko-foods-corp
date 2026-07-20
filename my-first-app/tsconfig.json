@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/investor-relation/components/Footer.jsx", "app/investor-relation/components/Header.jsx"  ],
   "exclude": ["node_modules"]
 }

@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Responsibility() {
   return (
-    <section className="bg-[#F9FFF8] py-20">
-      <div className="max-w-[1200px] mx-auto px-4 flex justify-between items-center gap-20">
+    <section className="bg-[#F9FFF8] py-14 md:py-20">
+      <div className="max-w-[1200px] mx-auto px-4 flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-20">
         {/* Left Images */}
-        <div className="flex gap-5">
-          <div className="w-[260px] h-[420px] relative rounded-lg overflow-hidden">
+        <div className="flex gap-3 md:gap-5 w-full max-w-[540px] lg:w-auto">
+          <div className="flex-1 lg:flex-none lg:w-[260px] h-[300px] md:h-[420px] relative rounded-lg overflow-hidden">
             <Image
               src="/images/responsibility-1.jpg"
               alt="Responsibility"
@@ -15,8 +15,8 @@ export default function Responsibility() {
             />
           </div>
 
-          <div className="flex flex-col gap-5">
-            <div className="w-[260px] h-[200px] relative rounded-lg overflow-hidden">
+          <div className="flex flex-col gap-3 md:gap-5 flex-1 lg:flex-none">
+            <div className="w-full lg:w-[260px] h-[144px] md:h-[200px] relative rounded-lg overflow-hidden">
               <Image
                 src="/images/responsibility-2.jpg"
                 alt="Responsibility"
@@ -25,7 +25,7 @@ export default function Responsibility() {
               />
             </div>
 
-            <div className="w-[260px] h-[200px] relative rounded-lg overflow-hidden">
+            <div className="w-full lg:w-[260px] h-[144px] md:h-[200px] relative rounded-lg overflow-hidden">
               <Image
                 src="/images/responsibility-3.jpg"
                 alt="Responsibility"
@@ -37,15 +37,15 @@ export default function Responsibility() {
         </div>
 
         {/* Right Content */}
-        <div className="max-w-[500px]">
+        <div className="w-full lg:max-w-[500px]">
           <h2
-            className="text-[40px] font-bold text-[#2D5A3D] mb-12"
+            className="text-3xl md:text-[40px] font-bold text-[#2D5A3D] mb-8 md:mb-12"
             style={{ fontFamily: "Georgia" }}
           >
             Our Responsibility
           </h2>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <div className="flex items-start gap-4">
               <Image
                 src="/images/check.svg"
