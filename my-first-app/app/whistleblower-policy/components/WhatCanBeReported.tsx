@@ -16,7 +16,7 @@ export default function WhatCanBeReported() {
           What Can Be Reported
         </h2>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-2 md:gap-6 lg:grid-cols-4">
           {items.slice(0, 4).map((item) => (
             <div
               key={item}
@@ -29,7 +29,7 @@ export default function WhatCanBeReported() {
           ))}
         </div>
 
-        <div className="mx-auto mt-4 grid max-w-[910px] grid-cols-1 gap-4 md:mt-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
+        <div className="mx-auto mt-2 grid max-w-[910px] grid-cols-2 gap-2 md:mt-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
           {items.slice(4).map((item) => (
             <div
               key={item}

@@ -13,6 +13,13 @@ export default function WhistleblowerHero() {
           <br className="hidden md:block" />{" "}
           reduces fines, and safeguards our brand reputation globally.
         </p>
+
+        <button
+          type="button"
+          className="mt-8 block w-full max-w-xs rounded-md bg-white px-6 py-3 font-[Georgia] text-base font-semibold text-green-800 shadow-sm transition hover:bg-white/90 md:hidden"
+        >
+          Submit a Report Anonymously
+        </button>
       </div>
     </section>
   );
