@@ -1,5 +1,5 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import InvestorHero from "./components/InvestorHero";
 import InvestorHighlights from "./components/InvestorHighlights";
 import MarketOpportunity from "./components/MarketOpportunity";
