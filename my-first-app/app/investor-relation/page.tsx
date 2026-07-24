@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import InvestorHero from "./components/InvestorHero";
 import InvestorHighlights from "./components/InvestorHighlights";
 import MarketOpportunity from "./components/MarketOpportunity";
@@ -11,21 +9,15 @@ import InvestorCTA from "./components/InvestorCTA";
 
 export default function InvestorRelationsPage() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <InvestorHero />
-        <InvestorHighlights />
-        <MarketOpportunity />
-        <GrowthRoadmap />
-        <Governance />
-        <ESGSustainability />
-        <InvestorNews />
-        <InvestorCTA />
-      </main>
-
-      <Footer />
-    </>
+    <main>
+      <InvestorHero />
+      <InvestorHighlights />
+      <MarketOpportunity />
+      <GrowthRoadmap />
+      <Governance />
+      <ESGSustainability />
+      <InvestorNews />
+      <InvestorCTA />
+    </main>
   );
 }

@@ -1,5 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import HeroSection from "./components/HeroSection";
 import PolicyHighlights from "./components/PolicyHighlights";
 import WhatCanBeReported from "./components/WhatCanBeReported";
@@ -14,24 +12,18 @@ import AssuranceLayer from "./components/AssuranceLayer";
 
 export default function WhistleblowerPolicyPage() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <HeroSection />
-        <PolicyHighlights />
-        <WhatCanBeReported />
-        <ReportingChannels />
-        <WhistleblowerProtections />
-        <RegionalEnforcement />
-        <ROIRiskMitigation />
-        <InvestigationProcess />
-        <CaseApplications />
-        <IntegritySection />
-        <AssuranceLayer />
-      </main>
-
-      <Footer />
-    </>
+    <main>
+      <HeroSection />
+      <PolicyHighlights />
+      <WhatCanBeReported />
+      <ReportingChannels />
+      <WhistleblowerProtections />
+      <RegionalEnforcement />
+      <ROIRiskMitigation />
+      <InvestigationProcess />
+      <CaseApplications />
+      <IntegritySection />
+      <AssuranceLayer />
+    </main>
   );
 }

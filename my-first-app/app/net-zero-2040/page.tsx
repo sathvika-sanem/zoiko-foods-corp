@@ -1,6 +1,3 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 import NetZeroRoadmapCTA from "./components/NetZeroRoadmapCTA";
 import NetZeroBenefits from "./components/NetZeroBenefits";
 import GlobalMilestones from "./components/GlobalMilestones";
@@ -14,23 +11,17 @@ import CertificationsVerification from "./components/CertificationsVerification"
 
 export default function NetZero2040Page() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <NetZeroRoadmapCTA />
-        <NetZeroBenefits />
-        <GlobalMilestones />
-        <RegionalComplianceRoadmaps />
-        <ScopeOfEmissions />
-        <ActionPillars />
-        <CompetitiveBenchmarking />
-        <ROINetZero />
-        <CaseStudies />
-        <CertificationsVerification />
-      </main>
-
-      <Footer />
-    </>
+    <main>
+      <NetZeroRoadmapCTA />
+      <NetZeroBenefits />
+      <GlobalMilestones />
+      <RegionalComplianceRoadmaps />
+      <ScopeOfEmissions />
+      <ActionPillars />
+      <CompetitiveBenchmarking />
+      <ROINetZero />
+      <CaseStudies />
+      <CertificationsVerification />
+    </main>
   );
 }
