@@ -57,7 +57,12 @@ const timeline = [
   },
 ];
 
-function TimelineItem({ year, description }) {
+interface TimelineItemProps {
+  year: string;
+  description: React.ReactNode;
+}
+
+function TimelineItem({ year, description }: TimelineItemProps) {
   return (
     <div className="flex flex-col items-center w-full max-w-[320px] shrink-0">
       <div className="w-16 h-16 rounded-full bg-[#2D5A3D] flex items-center justify-center shrink-0">
